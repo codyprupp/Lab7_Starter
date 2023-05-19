@@ -48,7 +48,7 @@ function initializeServiceWorker() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', async function() {
       try {
-        const registration = this.navigator.serviceWorker.register('../sw.js', { scope: '.' });
+        const registration = this.navigator.serviceWorker.register('./sw.js', { scope: '.' });
         console.log('Registration successful');
       } catch (error) {
         console.error(`Registration failed with ${error}`)
